@@ -44,6 +44,7 @@ header h1{
     box-shadow: rgba(0,0,0, .24) 0px 3px 8px;
     border-radius: 1rem;
     padding: 1.5rem;
+    margin-top: 5%;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -128,14 +129,17 @@ footer{
 }
 #details-container{
     display: flex;
-
     justify-content: center;
     align-items: center;
 }
 #details-container #humidity{
-    border-right: 1px solid black;
+   
     margin: .6rem .6rem 1rem .6rem;
     padding: .6rem;
     height: 20px;
     text-align: center;
+}
+#details-container #wind{
+    border-left: 1px solid black;
+    margin-left: 5rem;
 }
