@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="clima, tempo, temperatura">
+    <meta name="author" content="Nicolas Lamb">
+    <meta name="description" content="Site para ver o clima e a temperatura das cidades">
+    <title>Wether Clear</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1 alt= "logo escrito weather clear">WEATHERCLEAR</h1>
+    </header>
+    <div class="info">
+        <div class="form">
+            <h2>Veja a temperatura de uma cidade: </h2>
+            <div class="search-input">
+                <input type="text" placeholder="Digite o nome de uma cidade" id="city-input">
+                <button id="search-button">
+                    <img src="./img/lupa.png" width="17rem" height="auto">
+                </button>
+            </div>
+        </div> 
+        <div id="weather-data" class="hide">
+            <h2><img src="./img/pin.png">
+            <span id="city"></span>
+            <img src="#"alt="Bandeira do paísa" id="flag">
+            </h2>
+            <p id="temperature"><span></span>&deg;C</p>
+            <div id="description-container">
+                <p id="description"></p>
+                <img src="#"alt="icone da condição do tempo" id="weather-icon">
+            </div>
+            <div id="details-container">
+                <p id="humidity">
+                    <img src="./img/gota-de-agua.png" alt="imagem de uma gota de água">
+                    <span></span>
+                </p>
+                <p id="wind">
+                    <img src="./img/vento.png" alt="imagem de vento" ;>
+                    <span></span>
+                </p>
+            </div>
+            
+        </div>      
+    </div>
+    <footer>
+        <p>2023&copy; Todos os direitos reservados a Nicolas Lamb</p>
+    </footer>
+</body>
+</html>

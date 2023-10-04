@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css');
+
+:root{
+    --trade-color: linear-gradient(180deg, #594cee 0%, #8dd0f5 100%);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Ubuntu", sans-serif;
+}
+
+body{
+    background: var(--trade-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 1.5rem;
+    overflow-x: hidden;
+}
+
+.hide{
+    display: none;
+}
+header{
+    position: fixed;
+    top: 0;
+    padding: 1.5rem;
+    background-color: #E6E6E6;
+    margin-bottom: 10rem;
+    font-size: 1rem;
+    width: 100%;
+    
+}
+header h1{
+    margin-left: 10%;
+}
+.info{
+    display: flex;
+    background-color: #FFFFFF;
+    box-shadow: rgba(0,0,0, .24) 0px 3px 8px;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+footer{
+    font-size:large;
+    position: fixed;
+    bottom: 0;
+    text-align: center !important;
+
+}
+/*Formulario*/
+.form h2{
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+.search-input{
+    display: flex;
+}
+
+#city-input{
+    padding: 0.1rem;
+    padding-left: .6rem;
+    flex: 1;
+    border-radius: 4px;
+    border: 0.5px solid black;
+    height: 30px;
+}
+    
+.form button{
+    border-radius: 4px;
+    padding: 0.8rem;
+    border: 0.5px solid black;
+    min-width: 50px;
+    margin-left: 8px;
+    background: var(--trade-color);
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    padding-top: .5rem;
+    margin-bottom: 1.2rem;
+
+}
+/*Clima*/
+#weather-data h2{
+    display: flex;
+    width: 100%;
+    padding-top: 1.2rem;
+    border-top: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.6rem;
+}
+#weather-data h2 img{
+    width: 1rem;
+    height: auto;
+}
+#weather-data span{
+    margin: 0.6rem;
+
+}
+#flag{
+    height: 15pxpx !important;
+}
+#temperature{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+#description-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: .6rem 0;
+}
+#description{
+    font-weight: bold;
+    text-transform: capitalize;
+}
+#details-container{
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+#details-container #humidity{
+    border-right: 1px solid black;
+    margin: .6rem .6rem 1rem .6rem;
+    padding: .6rem;
+    height: 20px;
+    text-align: center;
+}
