@@ -1,4 +1,6 @@
 //Variaveis
+
+
 const apiKey= "b517aa00472fe4e81fa522312279121a";
 const apiCountry= "https://flagsapi.com/";
 
@@ -20,8 +22,17 @@ const getWeatherApi = async(city) =>{
 
     const  res = await fetch(apiWeatherURL);
     const data = await res.json();
-
-
+    if(data.main.temp<20){
+        document.body.style.background= 'linear-gradient(180deg, #181774 0%, #435bdf 100%)';
+        
+    }else if(data.main.temp>20 && data.main.temp<30){
+        document.body.style.background= 'linear-gradient(180deg, #fa991b 0%, #eaec5d 100%)'
+        
+    }
+    else{
+        document.body.style.background= 'linear-gradient(180deg, #eb2929 0%, #f37979 100%)'
+        
+    }
     return data;
 }
 const showWeatherData = async(city) =>{
