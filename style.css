@@ -131,6 +131,7 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 1.3rem;
 }
 #details-container #humidity{
    
@@ -141,5 +142,5 @@ footer{
 }
 #details-container #wind{
     border-left: 1px solid black;
-    margin-left: 5rem;
+    padding-left: 2rem;
 }
