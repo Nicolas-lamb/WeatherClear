@@ -5,7 +5,7 @@ const apiKey= "b517aa00472fe4e81fa522312279121a";
 const apiCountry= "https://flagsapi.com/";
 
 const cityInput = document.querySelector("#city-input");
-const searchButton = document.querySelector("#search-button");
+var searchButton = document.querySelector("#search-button");
 
 const cityElement = document.querySelector("#city");
 const tempElement = document.querySelector("#temperature span");
