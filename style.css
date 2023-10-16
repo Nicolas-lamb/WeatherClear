@@ -9,6 +9,7 @@
     padding: 0;
     margin: 0;
     font-family: "Ubuntu", sans-serif;
+    
 }
 
 body{
@@ -25,6 +26,7 @@ body{
 .hide{
     display: none;
 }
+
 header{
     position: fixed;
     top: 0;
@@ -38,13 +40,27 @@ header{
 header h1{
     color: black;
     text-decoration: none;
-}
-header h1{
     margin-left: 10%;
+}
+header h1:hover{
+    transition: .3s;
+    transform: scale(107%);
 }
 header h1 a{
     text-decoration: none;
     color: black;
+}
+.form button:hover{
+    transition: .3s;
+    transform: scale(110%);
+}
+.form input:hover{
+    transition: .3s;
+    transform: scale(103%);
+}
+#temperature:hover{
+    transition: .3s;
+    transform: scale(120%);
 }
 .info{
     display: flex;
@@ -56,7 +72,6 @@ header h1 a{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
 }
 footer{
     font-size:large;
@@ -124,6 +139,7 @@ footer{
     align-items: center;
     font-size: 20px;
     font-weight: bold;
+    width: 18rem;
 }
 #description-container{
     display: flex;
@@ -151,4 +167,18 @@ footer{
 #details-container #wind{
     border-left: 1px solid black;
     padding-left: 2rem;
+}
+@media screen and (max-width: 500px){
+    .form h2{
+        font-size: 1.2rem;
+    }
+   
+}
+@media screen and (max-width: 410px){
+    .form h2{
+        font-size: 1rem;
+    }
+    footer{
+        font-size: 0.7rem;
+    }
 }
